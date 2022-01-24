@@ -1,4 +1,4 @@
-# shop-shop
+# shop-shop - Redux
 
 ## Description
 Refactor of the e-commerce platform shop-shop project so that it uses Redux
@@ -9,10 +9,10 @@ Refactor of the e-commerce platform shop-shop project so that it uses Redux
 `SO THAT my website's state management is taken out of the React ecosystem`
 
 ### Github Repository
-[Shop-Shop]()
+[Shop-Shop Redux]()
 
 ### Deployed Application
-[Heroku - Shop-Shop]()
+[Shop-Shop Redux]()
 
 ![Screenshot]()
  
