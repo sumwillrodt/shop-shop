@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
-
 import ProductItem from '../ProductItem';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import spinner from '../../assets/spinner.gif';
@@ -9,6 +8,18 @@ function ProductList({ currentCategory }) {
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   const products = data?.products || [];
+
+  useEffect(() => {
+    if (data) {
+      updateProducts(data.products);
+      data.products.forEach((product) => {
+        idbPromise("products", "put", product);
+      });
+    } else if (!loading) {
+      idbPromise("products", "get").then((products) => {updateProducts(products);});
+    }
+  }, [data, loading, updateProducts]);
+
 
   function filterProducts() {
     if (!currentCategory) {
