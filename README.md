@@ -9,12 +9,10 @@ Refactor of the e-commerce platform shop-shop project so that it uses Redux
 `SO THAT my website's state management is taken out of the React ecosystem`
 
 ### Github Repository
-[Shop-Shop Redux]()
+[Shop-Shop Redux](https://github.com/sumwillrodt/shop-shop)
 
 ### Deployed Application
-[Shop-Shop Redux]()
-
-![Screenshot]()
+[Shop-Shop Redux](https://sumwillrodt.github.io/shop-shop/)
  
 ### License
 MIT
